@@ -3,12 +3,12 @@ import os, re, zipfile
 # config here!
 
 # directories
-# workshop mods are stored as folders and local mods as zip files, so i have to differentiate
+# steam workshop mods are stored as folders and local mods as zip files, and usually at different locations
 # a typical directory would be:
-# workshop dir = "C:/Program Files (x86)/Steam/steamapps/workshop/content/236850/"
+# workshop_dir = "C:/Program Files (x86)/Steam/steamapps/workshop/content/236850/"
 # local_dir = "C:/Users/Admin/Documents/Paradox Interactive/Europa Universalis IV/mod/"
-workshop_dir = "C:/Program Files (x86)/Steam/steamapps/workshop/content/236850/"
-local_dir = "C:/Users/HammarlundIsak/Documents/Paradox Interactive/Europa Universalis IV/mod/"
+workshop_dir = "workshop/"
+local_dir = "local/"
 
 # (mostly to ignore "complete overhaul"-type mods that you already know will conflict with everything)
 blacklist = []
@@ -16,11 +16,11 @@ blacklist = []
 # you know what a whitelist is! it will be prioritized over the blacklist
 whitelist = []
 
-# only compare mods that are currently enabled, requires a special file where the enabled status is stored
+# only compare mods that are currently enabled, requires the special file dlc_load.json where the mods' enabled statuses are stored
 # a typical location would be:
 # dlc_load_location = "C:/Users/Admin/Documents/Paradox Interactive/Europa Universalis IV/dlc_load.json"
 only_enabled_mods = False
-dlc_load_location = "C:/Users/HammarlundIsak/Documents/Paradox Interactive/Europa Universalis IV/dlc_load.json"
+dlc_load_location = "local/dlc_load.json"
 
 
 
