@@ -1,0 +1,142 @@
+Changelog:
+
+Version 1.6.0
+-added Hesse-Nassau
+-added East Prussia
+-added Hansa
+-added Angevin Empire
+-added Emilia-Romagna
+
+
+Version 1.5.4
+-changed some country colours
+
+
+Version 1.5.3
+-bug fixes 
+
+
+Version 1.5.2
+-bug fixes
+
+
+Version 1.5.1
+-changed Maghrebia to Maghrebia
+
+
+Version 1.5
+-added Maghrebia
+-added Tatarstan
+-added Lower Saxony
+-added Adriatic Empire
+-added Himalayan Empire
+-added Alsace-Lorraine
+-added Franco-Iberia
+
+
+Version 1.4.2
+-update for 1.15
+
+
+Version 1.4.1
+-added United Kingdom
+-changed colour of Sweden-Norway
+
+
+Version 1.4
+-added European Union
+-added Caucasia
+-added Celtic Union
+-added Burma
+-added Sweden-Norway
+-added China
+-added Turkey
+-added Soviet Union
+
+
+Version 1.3.8:
+-second update for 1.14
+
+
+Version 1.3.7
+-first update for 1.14
+
+
+Version 1.3.6
+-fixed all bugs
+
+
+Version 1.3.5
+-changed preview picture
+
+
+Version 1.3.4
+-added Cisalpina
+-removed timeline extention
+
+
+Version 1.3.3
+-fixed localisation file
+
+
+Version 1.3.2
+-the game now ends at year 9999
+-fixed rhine confederation localisation file
+
+
+Version 1.3.1
+-fixed Basque-Spanish-Bug
+
+
+Version 1.3
+-changed "Pontos" to Pontus
+-changed needed provinces to form Austria-Hungary
+-added Baltic Union
+-added Rhine Confederation
+-added Abyssinia
+-added Czechoslovakia
+-added North Sea Empire
+-added Roman Empire
+
+
+Version 1.2.3
+-fixed Italian-States-Bug
+-changed Basque Coutnry's name to Euskal Herria
+
+
+Version 1.2.2
+-fixed german localisation file
+
+
+Version 1.2.1
+-fixed Basque Country localisation file
+-fixed Austria-Hungary decision file
+
+
+Version 1.2
+-added Lombardy-Venetia
+-added Italian Merchant Alliance
+-added Austria-Hungary
+-added Iberia
+
+
+Version 1.1
+-added Franconia
+-added North German Confederation
+-added Two Sicilies
+-changed needed provinces to form Yugoslavia
+
+
+Version 1.0.1
+-fixed english localisation file
+
+
+Version 1.0
+-first release
+-added Benelux
+-added Swabia
+-added Basque Country
+-added Belgium	
+-added Pontos
+-added Yugoslavia
+-added Alpland

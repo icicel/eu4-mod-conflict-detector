@@ -1,0 +1,168 @@
+namespace = sob_opinion_events
+# Local Revolt
+country_event = {
+	id = sob_opinion_events.1
+	title = celestial_empire_events.2.t
+	desc = celestial_empire_events.2.d
+	picture = IMPERIAL_EXAMINATION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+               any_country = {
+			   technology_group = ROOT
+			   NOT = {has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_tech_group
+}}
+			   }
+		
+	}
+	
+
+	option = {
+		name = "celestial_empire_events.2.b"
+		ai_chance = {
+			factor = 0
+		}
+		every_country = {
+		limit = { technology_group = ROOT
+					   NOT = {has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_tech_group
+}}
+		}
+		add_opinion = {
+    who = ROOT
+    modifier = sob_same_tech_group
+}
+		}
+	}
+}
+
+country_event = {
+	id = sob_opinion_events.2
+	title = celestial_empire_events.2.t
+	desc = celestial_empire_events.2.d
+	picture = IMPERIAL_EXAMINATION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+               any_country = {
+			  NOT = { technology_group = ROOT }
+			  has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_tech_group
+}
+			   }
+		
+	}
+	
+
+	option = {
+		name = "celestial_empire_events.2.b"
+		ai_chance = {
+			factor = 0
+		}
+		every_country = {
+		limit = { NOT = {technology_group = ROOT}
+					has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_tech_group
+}
+		}
+		remove_opinion = {
+    who = ROOT
+    modifier = sob_same_tech_group
+}
+		}
+	}
+}
+
+
+country_event = {
+	id = sob_opinion_events.4
+	title = celestial_empire_events.2.t
+	desc = celestial_empire_events.2.d
+	picture = IMPERIAL_EXAMINATION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+               any_country = {
+			  NOT = {  culture_group = ROOT  }
+			  has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_nation
+}
+			   }
+		
+	}
+	
+
+	option = {
+		name = "celestial_empire_events.2.b"
+		ai_chance = {
+			factor = 0
+		}
+		every_country = {
+		limit = { NOT = { culture_group = ROOT }
+					has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_nation
+}
+		}
+		remove_opinion = {
+    who = ROOT
+    modifier = sob_same_nation
+}
+		}
+	}
+}
+
+country_event = {
+	id = sob_opinion_events.3
+	title = celestial_empire_events.2.t
+	desc = celestial_empire_events.2.d
+	picture = IMPERIAL_EXAMINATION_eventPicture
+	
+	hidden = yes
+	
+	trigger = {
+	OR = {
+	culture_group = east_asian
+	is_institution_enabled = enlightenment
+	}
+               any_country = {
+			  culture_group = ROOT 
+			NOT =  { has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_nation
+}
+}
+			   }
+		
+	}
+	
+
+	option = {
+		name = "celestial_empire_events.2.b"
+		ai_chance = {
+			factor = 0
+		}
+		every_country = {
+		limit = { culture_group = ROOT
+					NOT = {has_opinion_modifier = {
+	who = ROOT
+	modifier = sob_same_nation
+}
+		}
+		}
+		add_opinion = {
+    who = ROOT
+    modifier = sob_same_nation
+}
+		}
+	}
+}

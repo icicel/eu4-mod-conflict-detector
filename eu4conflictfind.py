@@ -7,8 +7,8 @@ import os, re, zipfile
 # a typical directory would be:
 # workshop_dir = "C:/Program Files (x86)/Steam/steamapps/workshop/content/236850/"
 # local_dir = "C:/Users/Admin/Documents/Paradox Interactive/Europa Universalis IV/mod/"
-workshop_dir = "workshop/"
-local_dir = "local/"
+workshop_dir = "example_workshop_dir/"
+local_dir = "example_local_dir/"
 
 # (mostly to ignore "complete overhaul"-type mods that you already know will conflict with everything)
 blacklist = []
@@ -20,7 +20,7 @@ whitelist = []
 # a typical location would be:
 # dlc_load_location = "C:/Users/Admin/Documents/Paradox Interactive/Europa Universalis IV/dlc_load.json"
 only_enabled_mods = False
-dlc_load_location = "local/dlc_load.json"
+dlc_load_location = "example_local_dir/dlc_load.json"
 
 
 
