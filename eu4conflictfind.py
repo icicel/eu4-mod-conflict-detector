@@ -45,7 +45,7 @@ def get_from_descriptor(key, mod_path, is_archive):
 def get_from_external_descriptor(key, file):
     # descriptor files are also stored directly in the local_dir, in addition to being in the respective mod directory
     # these "external" descriptor files signal to the game launcher what mods are installed
-    # the launcher also refers to them when telling us what mods are enabled
+    # dlc_load.json also refers to them when telling what mods are enabled
     return [re.search(key + "=\"(.+)\"", l).group(1)
             for l in open(local_dir + file, "r").read().split("\n")
             if l[:len(key) + 1] == key + "="]
@@ -70,7 +70,7 @@ def get_all_archive_files(archive_path):
 
 # returns a list of all defines in all defines files of the mod
 # yeah, defines files need that special treatment
-# they are always .lua files located at /common/defines/
+# they are always .lua files located at /common/defines/ (in the mod)
 def get_defines(mod, is_archive):
     defines = []
     if is_archive:
@@ -84,7 +84,7 @@ def get_defines(mod, is_archive):
                 defines += get_mod_file(workshop_dir + mod, "/common/defines/" + f, False).split("\n")
     return [re.search("[\t ]?(.+?)[\t =]", line).group(1)
             for line in defines
-            if "NDefines" in line.split("-", 1)[0]] # <- avoids commented lines
+            if "NDefines" in line.split("--", 1)[0]] # <- avoids commented lines
 
 # sends all files in changes_list to changes (a dictionary)
 # the data structure this function uses:
